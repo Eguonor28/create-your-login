@@ -1,0 +1,97 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+.leftside {
+  background-color: rgb(130, 200, 210);
+  background-image: url(/rockets.png);
+  background-repeat: no-repeat;
+  background-position: 20% 170%;
+  background-size: 400px;
+  flex: 1;
+}
+.leftside_container {
+  padding: 50px 60px;
+}
+h1 {
+  padding-top: 80px;
+  font-size: 70px;
+  font-weight: 300;
+}
+.leftside_container p {
+  padding-top: 50px;
+  font-weight: 100;
+}
+.rightside {
+  flex: 1;
+}
+.rightside_top_container {
+  padding: 100px 100px 0px 100px;
+  /* background-color: aqua; */
+}
+h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+input {
+  width: 100%;
+  padding: 20px 20px;
+}
+.user_names {
+  padding-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.email,
+.password {
+  margin-top: 20px;
+}
+input::placeholder {
+  font-size: 16px;
+}
+.rightside_top_container p {
+  margin-top: 40px;
+  font-size: 13px;
+}
+a {
+  color: black;
+}
+.rightside_bottom_container {
+  /* position: fixed; */
+  border-top: 0.1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 120px;
+  padding: 20px;
+}
+button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 1024px) {
+  .user_names {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    .leftside {
+      background-image: none;
+    }
+  }
+}
